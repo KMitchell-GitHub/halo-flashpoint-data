@@ -1,0 +1,33 @@
+[
+  {
+    "name": "M6 Spartan Laser",
+    "hfp": "m6_spartan_laser",
+    "cost": 16,
+    "type": "weapon",
+	"limited": 1,
+	"range": "r7",
+	"armourpiercing": 4,
+	"keywords": ["Letal (2)", "Long", "Optics", "Weight of Fire (2)"]
+	"description"
+  },
+  {
+    "name": "Active Camouflage",
+    "id": "active_camouflage",
+    "cost": 3,
+    "type": "item",
+    "range": null,
+    "armorPiercing": null,
+    "keywords":,
+	"description": "When this item is used, enemy models may not draw LOS to the camouflaged model. The effect lasts until the model is killed, or takes a Sprint action, a Shoot action, or an Assault action."
+  },
+  {
+	"name": "Plasma Grenade",
+    "id": "plasma_grenade",
+    "cost": 6,
+    "type": "grenade",
+    "range": 3,
+    "armorPiercing": 2,
+    "keywords":, ["Frag (4)", "Grenade", "Lethal (1)", "One-Use", "Sticky"], 
+	"description": 
+  }
+]
