@@ -1,0 +1,84 @@
+[
+	{
+		"name": "Spartan Brawler",
+		"hfp": "spartan_brawler",
+		"faction": "unsc",
+		"stats": [
+			{ "type": "health", "value": 4},
+			{ "type": "ranged", "value": 5},
+			{ "type": "fight", "value": 5},
+			{ "type": "save", "value": 5},
+			{ "type": "speed", "value": 2-3},
+			{ "type": "armor", "value": 2},
+			{ "type": "energy shield", "value": 2}
+			],
+		"units": [
+				{
+				"Designation": "Brawler - CQS48 Bulldog - Core Set",
+				"Weapon Type": "cqs48bullbog",
+				"limited": 2,
+				"points": 43,
+				"hfp": "brawler_bulldog_core"
+				},
+				"Slots": [
+				"Close Combat": "M11 Combat Knife",
+				"Ranged": "CQS48 Bulldog",
+				"Pick Up",
+				"Item",
+				"Item",
+				"Grenade",
+				"Grenade"
+				],
+				},
+				{
+				"Designation": "Brawler - CQS48 Bulldog",
+				"Weapon Type": "cqs48bullbog",
+				"limited": 2,
+				"points": 39,
+				"hfp": "brawler_bulldog"
+				},
+				"Slots": [
+				"Close Combat",
+				"Ranged": "CQS48 Bulldog",
+				"Pick Up",
+				"Item",
+				"Item",
+				"Grenade",
+				"Grenade"
+				],
+				},
+				{
+				"Designation": "Brawler - Needler - Core Set",
+				"Weapon Type": "spartanneedler",
+				"limited": 2,
+				"points": 43,
+				"hfp": "brawler_needler_core"
+				},
+				"Slots": [
+				"Close Combat": "M11 Combat Knife",
+				"Ranged": "Needler",
+				"Pick Up",
+				"Item",
+				"Item",
+				"Grenade",
+				"Grenade"
+				],
+				},
+				{
+				"Designation": "Brawler - Needler",
+				"Weapon Type": "spartanneedler",
+				"limited": 2,
+				"points": 39,
+				"hfp": "brawler_needler"
+				},
+				"Slots": [
+				"Close Combat": "Spartan Fists",
+				"Ranged": "Needler",
+				"Pick Up",
+				"Item",
+				"Item",
+				"Grenade",
+				"Grenade"
+		]
+	}
+]
