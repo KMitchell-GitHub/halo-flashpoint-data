@@ -2,7 +2,7 @@
 	{
 		"name": "Spartan Brawler",
 		"hfp": "spartan_brawler",
-		"faction": "hfp": "unsc",
+		"faction": "unsc",
 		"stats": [
 			{ "type": "health", "value": 4},
 			{ "type": "ranged", "value": 5},
@@ -29,7 +29,7 @@
 				"Grenade",
 				"Grenade"
 				],
-				},
+				],
 				{
 				"Designation": "Brawler - CQS48 Bulldog",
 				"Weapon Type": "cqs48bullbog",
@@ -46,7 +46,6 @@
 				"Grenade",
 				"Grenade"
 				],
-				},
 				{
 				"Designation": "Brawler - Needler - Core Set",
 				"Weapon Type": "spartanneedler",
@@ -63,7 +62,6 @@
 				"Grenade",
 				"Grenade"
 				],
-				},
 				{
 				"Designation": "Brawler - Needler",
 				"Weapon Type": "spartanneedler",
