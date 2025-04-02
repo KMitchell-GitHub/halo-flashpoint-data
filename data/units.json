@@ -8,7 +8,7 @@
 			{ "type": "ranged", "value": 5},
 			{ "type": "fight", "value": 5},
 			{ "type": "save", "value": 5},
-			{ "type": "speed", "value": 2-3},
+			{ "type": "speed", "value": "2-3"},
 			{ "type": "armor", "value": 2},
 			{ "type": "energy shield", "value": 2}
 			],
