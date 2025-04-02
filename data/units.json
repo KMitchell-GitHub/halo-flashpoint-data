@@ -2,7 +2,7 @@
 	{
 		"name": "Spartan Brawler",
 		"hfp": "spartan_brawler",
-		"faction": "unsc",
+		"faction": "hfp": "unsc",
 		"stats": [
 			{ "type": "health", "value": 4},
 			{ "type": "ranged", "value": 5},
