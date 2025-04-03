@@ -2,9 +2,11 @@
   {
     "name": "UNSC",
     "hfp": "unsc",
+    "unitFile": "units/unsc_units.json"
   },
   {
     "name": "The Banished",
-    "hfp": "banished",
+    "hfp": "thebanished",
+    "unitFile": "units/the_banished_units.json"
   }
 ]
