@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Unofficial Halo: Flashpoint Squad Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .faction {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .unit-list {
+            margin-left: 20px;
+        }
+
+        .unit-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .unit-item input {
+            margin-right: 10px;
+        }
+
+        .selected-units {
+            margin-top: 20px;
+        }
+
+        .selected-unit {
+            margin: 5px 0;
+        }
+
+        .stats, .weapons {
+            margin-left: 20px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .stats li, .weapons li {
+            margin-bottom: 5px;
+        }
+
+        .total-stats {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+
+        .points-limit {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 1.1em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>An Unofficial Halo: Flashpoint Squad Builder</h1>
+        
+        <div id="data-display">Loading factions...</div>
+
+        <div class="points-limit">
+            <label for="points-limit">Enter Squad Points Limit:</label>
+            <input type="number" id="points-limit" placeholder="Enter points limit" oninput="updatePointsLimit()">
+        </div>
+
+        <div class="selected-units" id="selected-units">
+            <h2>Selected Units (Up to 4)</h2>
+            <ul id="selected-units-list"></ul>
+            <div id="unit-stats"></div>
+            <div class="total-stats" id="total-stats">Total Squad Points: 0</div>
+            <div id="warning-message" class="warning"></div>
+        </div>
+
+        <button id="submit-btn" disabled>Submit Squad</button>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const factionsResponse = await fetch('https://kmitchell-github.github.io/halo-flashpoint-data/data/factions.json');
+                const unitsResponse = await fetch('https://kmitchell-github.github.io/halo-flashpoint-data/data/unsc_units.json');
+                
+                const factions = await factionsResponse.json();
+                const units = await unitsResponse.json();
+
+                const displayDiv = document.getElementById('data-display');
+                displayDiv.innerHTML = '';
+
+                let factionDropdown = `<label for="faction">Choose Faction:</label><select id="faction" onchange="displayUnits()">`;
+                factions.forEach(faction => {
+                    factionDropdown += `<option value="${faction.hfp}">${faction.name}</option>`;
+                });
+                factionDropdown += `</select>`;
+                displayDiv.innerHTML = factionDropdown;
+
+                window.selectedUnits = [];
+                window.units = units; // Save units globally for use in selection
+
+            } catch (error) {
+                document.getElementById('data-display').textContent = 'Error loading data.';
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        function displayUnits() {
+            const selectedFaction = document.getElementById('faction').value;
+            const selectedUnits = window.units.filter(unit => unit.faction === selectedFaction);
+
+            const unitList = selectedUnits.map(unit => {
+                return `
+                    <div class="unit-item">
+                        <input type="checkbox" id="${unit.name}" value="${unit.name}" onclick="selectUnit('${unit.name}', ${unit.squadPoints})">
+                        <label for="${unit.name}">${unit.name} - ${unit.squadPoints} pts</label>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('data-display').innerHTML = `
+                <div class="faction">${selectedFaction} Units:</div>
+                <div class="unit-list">${unitList}</div>
+            `;
+        }
+
+        function selectUnit(unitName, squadPoints) {
+            const selectedUnitsList = document.getElementById('selected-units-list');
+            const unitStatsDiv = document.getElementById('unit-stats');
+            const totalStatsDiv = document.getElementById('total-stats');
+            const warningMessageDiv = document.getElementById('warning-message');
+            const submitBtn = document.getElementById('submit-btn');
+            
+            const unitIndex = window.selectedUnits.findIndex(unit => unit.name === unitName);
+            const selectedUnit = window.units.find(unit => unit.name === unitName);
+
+            if (unitIndex > -1) {
+                window.selectedUnits.splice(unitIndex, 1);
+            } else {
+                if (window.selectedUnits.length >= 4) {
+                    alert("You can only select up to 4 units.");
+                    return;
+                }
+                window.selectedUnits.push({ name: unitName, squadPoints, stats: selectedUnit.stats, weapons: selectedUnit.weapons });
+            }
+
+            // Update selected units list
+            selectedUnitsList.innerHTML = window.selectedUnits.map(unit => `<li class="selected-unit">${unit.name} - ${unit.squadPoints} pts</li>`).join('');
+
+            // Display selected unit stats and weapons
+            unitStatsDiv.innerHTML = '';
+            let totalPoints = 0;
+            window.selectedUnits.forEach(unit => {
+                totalPoints += unit.squadPoints;
+
+                // Display stats
+                const statsList = unit.stats.map(stat => {
+                    return `<li>${stat.name}: ${stat.value}</li>`;
+                }).join('');
+                unitStatsDiv.innerHTML += `<h3>${unit.name} Stats:</h3><ul class="stats">${statsList}</ul>`;
+
+                // Display weapons
+                const weaponsList = unit.weapons.map(weapon => {
+                    return `<li>${weapon.name} (Range: ${weapon.range}, AP: ${weapon.AP})</li>`;
+                }).join('');
+                unitStatsDiv.innerHTML += `<h3>${unit.name} Weapons:</h3><ul class="weapons">${weaponsList}</ul>`;
+            });
+
+            totalStatsDiv.textContent = `Total Squad Points: ${totalPoints}`;
+
+            // Compare with points limit
+            const pointsLimit = parseInt(document.getElementById('points-limit').value) || 0;
+            if (pointsLimit && totalPoints > pointsLimit) {
+                warningMessageDiv.textContent = `Warning: Squad exceeds the points limit by ${totalPoints - pointsLimit} points!`;
+            } else {
+                warningMessageDiv.textContent = '';
+            }
+
+            if (window.selectedUnits.length > 0) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        }
+
+        function updatePointsLimit() {
+            const pointsLimit = parseInt(document.getElementById('points-limit').value) || 0;
+            const totalPoints = window.selectedUnits.reduce((total, unit) => total + unit.squadPoints, 0);
+            const warningMessageDiv = document.getElementById('warning-message');
+
+            if (pointsLimit && totalPoints > pointsLimit) {
+                warningMessageDiv.textContent = `Warning: Squad exceeds the points limit by ${totalPoints - pointsLimit} points!`;
+            } else {
+                warningMessageDiv.textContent = '';
+            }
+        }
+
+        loadData();  // Load the data when the page loads
+    </script>
+
+</body>
+</html>
