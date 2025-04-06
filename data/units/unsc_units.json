@@ -5,12 +5,12 @@
     "faction": "UNSC",
     "squadPoints": 39,
     "stats": {
-      "SP": "2-3",  // Speed
-      "RA": "5+",   // Ranged
-      "FI": "3+",   // Fight
-      "SV": "5+",   // Survive
-      "AR": "2",    // Armor
-      "HP": "4"     // Health
+      "SP": "2-3",
+      "RA": "5+",
+      "FI": "3+",
+      "SV": "5+",
+      "AR": "2", 
+      "HP": "4"
     },
     "keywords": ["Energy Shield (2)"],
     "itemSlots": null,
@@ -39,12 +39,12 @@
     "faction": "UNSC",
     "squadPoints": 43,
     "stats": {
-      "SP": "2-3",  // Speed
-      "RA": "5+",   // Ranged
-      "FI": "3+",   // Fight
-      "SV": "5+",   // Survive
-      "AR": "2",    // Armor
-      "HP": "4"     // Health
+      "SP": "2-3",
+      "RA": "5+",
+      "FI": "3+",
+      "SV": "5+",
+      "AR": "2", 
+      "HP": "4"
     },
     "keywords": ["Energy Shield (2)"],
     "itemSlots": null,
@@ -73,12 +73,12 @@
     "faction": "UNSC",
     "squadPoints": 39,
     "stats": {
-      "SP": "2-3",  // Speed
-      "RA": "5+",   // Ranged
-      "FI": "3+",   // Fight
-      "SV": "5+",   // Survive
-      "AR": "2",    // Armor
-      "HP": "4"     // Health
+      "SP": "2-3",
+      "RA": "5+",
+      "FI": "3+",
+      "SV": "5+",
+      "AR": "2", 
+      "HP": "4"
     },
     "keywords": ["Energy Shield (2)"],
     "itemSlots": null,
@@ -107,12 +107,12 @@
     "faction": "UNSC",
     "squadPoints": 43,
     "stats": {
-      "SP": "2-3",  // Speed
-      "RA": "5+",   // Ranged
-      "FI": "3+",   // Fight
-      "SV": "5+",   // Survive
-      "AR": "2",    // Armor
-      "HP": "4"     // Health
+      "SP": "2-3",
+      "RA": "5+",
+      "FI": "3+",
+      "SV": "5+",
+      "AR": "2", 
+      "HP": "4"
     },
     "keywords": ["Energy Shield (2)"],
     "itemSlots": null,
