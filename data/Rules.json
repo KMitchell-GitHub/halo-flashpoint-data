@@ -2,13 +2,13 @@
     "unitSelection": {
       "minUnits": 1,
       "maxUnits": null,
-      "variantRestriction": {
-        "maxPerVariant": 2
+      "weaponRestriction": {
+        "maxPerWeapon": 2
       }
     },
     "weaponUpgrades": {
       "maxPerSquad": 1,
-      "excludedFromVariantRestriction": true
+      "excludedFromWeaponRestriction": true
     },
     "grenadeUpgrades": {
       "maxPerUnit": 2,
