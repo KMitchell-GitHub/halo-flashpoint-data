@@ -1,138 +1,140 @@
-[
-  {
-    "name": "Spartan Brawler",
-    "variant": "CQS48 Bulldog",
-    "faction": "UNSC",
-    "squadPoints": 39,
-    "stats": {
-      "SP": "2-3",
-      "RA": "5+",
-      "FI": "3+",
-      "SV": "5+",
-      "AR": "2", 
-      "HP": "4"
+{
+  "units":[
+    {
+      "name": "Spartan Brawler",
+      "variant": "CQS48 Bulldog",
+      "faction": "UNSC",
+      "squadPoints": 39,
+      "stats": {
+        "SP": "2-3",
+        "RA": "5+",
+        "FI": "3+",
+        "SV": "5+",
+        "AR": "2", 
+        "HP": "4"
+      },
+      "keywords": ["Energy Shield (2)"],
+      "itemSlots": null,
+      "grenadeSlots": null,
+      "closeCombatWeapon": {
+        "type": "Close Combat",
+        "name": "Spartan Fists",
+        "range": "CC",
+        "AP": 0,
+        "keywords": []
+      },	  
+      "rangedWeapon": {
+        "type": "Ranged",
+        "name": "CQS48 Bulldog",
+        "range": "r2",
+        "AP": 2,
+        "keywords": ["Knockback", "Lethal (1)"]
+      },
+      "prebuilt": false,
+      "pickupSlot": null,
+      "upgradedCloseCombatWeapon": null
     },
-    "keywords": ["Energy Shield (2)"],
-    "itemSlots": null,
-    "grenadeSlots": null,
-    "closeCombatWeapon": {
-      "type": "Close Combat",
-      "name": "Spartan Fists",
-      "range": "CC",
-      "AP": 0,
-      "keywords": []
-    },	  
-    "rangedWeapon": {
-      "type": "Ranged",
-      "name": "CQS48 Bulldog",
-      "range": "r2",
-      "AP": 2,
-      "keywords": ["Knockback", "Lethal (1)"]
+    {
+      "name": "Spartan Brawler",
+      "variant": "Prebuilt CQS48 Bulldog",
+      "faction": "UNSC",
+      "squadPoints": 43,
+      "stats": {
+        "SP": "2-3",
+        "RA": "5+",
+        "FI": "3+",
+        "SV": "5+",
+        "AR": "2", 
+        "HP": "4"
+      },
+      "keywords": ["Energy Shield (2)"],
+      "itemSlots": null,
+      "grenadeSlots": null,
+      "closeCombatWeapon": {
+        "type": "Close Combat",
+        "name": "M11 Combat Knife",
+        "range": "CC",
+        "AP": 3,
+        "keywords": ["ESD (1)"]
+      },	  
+      "rangedWeapon": {
+        "type": "Ranged",
+        "name": "CQS48 Bulldog",
+        "range": "r2",
+        "AP": 2,
+        "keywords": ["Knockback", "Lethal (1)"]
+      },
+      "prebuilt": true,
+      "pickupSlot": null,
+      "upgradedCloseCombatWeapon": null
     },
-    "prebuilt": false,
-    "pickupSlot": null,
-    "upgradedCloseCombatWeapon": null
-  },
-  {
-    "name": "Spartan Brawler",
-    "variant": "Prebuilt CQS48 Bulldog",
-    "faction": "UNSC",
-    "squadPoints": 43,
-    "stats": {
-      "SP": "2-3",
-      "RA": "5+",
-      "FI": "3+",
-      "SV": "5+",
-      "AR": "2", 
-      "HP": "4"
+    {
+      "name": "Spartan Brawler",
+      "variant": "Needler",
+      "faction": "UNSC",
+      "squadPoints": 39,
+      "stats": {
+        "SP": "2-3",
+        "RA": "5+",
+        "FI": "3+",
+        "SV": "5+",
+        "AR": "2", 
+        "HP": "4"
+      },
+      "keywords": ["Energy Shield (2)"],
+      "itemSlots": null,
+      "grenadeSlots": null,
+      "closeCombatWeapon": {
+        "type": "Close Combat",
+        "name": "Spartan Fists",
+        "range": "CC",
+        "AP": 0,
+        "keywords": ["melee"]
+      },	  
+      "rangedWeapon": {
+        "type": "Ranged",
+        "name": "Needler",
+        "range": "R3",
+        "AP": 0,
+        "keywords": ["Lethal (1)", "Rapid Fire", "Weight of Fire (1)"]
+      },
+      "prebuilt": false,
+      "pickupSlot": null,
+      "upgradedCloseCombatWeapon": null
     },
-    "keywords": ["Energy Shield (2)"],
-    "itemSlots": null,
-    "grenadeSlots": null,
-    "closeCombatWeapon": {
-      "type": "Close Combat",
-      "name": "M11 Combat Knife",
-      "range": "CC",
-      "AP": 3,
-      "keywords": ["ESD (1)"]
-    },	  
-    "rangedWeapon": {
-      "type": "Ranged",
-      "name": "CQS48 Bulldog",
-      "range": "r2",
-      "AP": 2,
-      "keywords": ["Knockback", "Lethal (1)"]
-    },
-    "prebuilt": true,
-    "pickupSlot": null,
-    "upgradedCloseCombatWeapon": null
-  },
-  {
-    "name": "Spartan Brawler",
-    "variant": "Needler",
-    "faction": "UNSC",
-    "squadPoints": 39,
-    "stats": {
-      "SP": "2-3",
-      "RA": "5+",
-      "FI": "3+",
-      "SV": "5+",
-      "AR": "2", 
-      "HP": "4"
-    },
-    "keywords": ["Energy Shield (2)"],
-    "itemSlots": null,
-    "grenadeSlots": null,
-    "closeCombatWeapon": {
-      "type": "Close Combat",
-      "name": "Spartan Fists",
-      "range": "CC",
-      "AP": 0,
-      "keywords": ["melee"]
-    },	  
-    "rangedWeapon": {
-      "type": "Ranged",
-      "name": "Needler",
-      "range": "R3",
-      "AP": 0,
-      "keywords": ["Lethal (1)", "Rapid Fire", "Weight of Fire (1)"]
-    },
-    "prebuilt": false,
-    "pickupSlot": null,
-    "upgradedCloseCombatWeapon": null
-  },
-  {
-    "name": "Spartan Brawler",
-    "variant": "Prebuilt Needler",
-    "faction": "UNSC",
-    "squadPoints": 43,
-    "stats": {
-      "SP": "2-3",
-      "RA": "5+",
-      "FI": "3+",
-      "SV": "5+",
-      "AR": "2", 
-      "HP": "4"
-    },
-    "keywords": ["Energy Shield (2)"],
-    "itemSlots": null,
-    "grenadeSlots": null,
-    "closeCombatWeapon": {
-      "type": "Close Combat",
-      "name": "M11 Combat Knife",
-      "range": "CC",
-      "AP": 3,
-      "keywords": ["ESD (1)"]
-    },	  
-    "rangedWeapon": {
-      "type": "Ranged",
-      "name": "Needler",
-      "range": 2,
-      "AP": 0,
-      "keywords": ["ranged", "needle"]
-    },
-    "prebuilt": true,
-    "pickupSlot": null,
-    "upgradedCloseCombatWeapon": null
-  }
-]
+    {
+      "name": "Spartan Brawler",
+      "variant": "Prebuilt Needler",
+      "faction": "UNSC",
+      "squadPoints": 43,
+      "stats": {
+        "SP": "2-3",
+        "RA": "5+",
+        "FI": "3+",
+        "SV": "5+",
+        "AR": "2", 
+        "HP": "4"
+      },
+      "keywords": ["Energy Shield (2)"],
+      "itemSlots": null,
+      "grenadeSlots": null,
+      "closeCombatWeapon": {
+        "type": "Close Combat",
+        "name": "M11 Combat Knife",
+        "range": "CC",
+        "AP": 3,
+        "keywords": ["ESD (1)"]
+      },	  
+      "rangedWeapon": {
+        "type": "Ranged",
+        "name": "Needler",
+        "range": 2,
+        "AP": 0,
+        "keywords": ["ranged", "needle"]
+      },
+      "prebuilt": true,
+      "pickupSlot": null,
+      "upgradedCloseCombatWeapon": null
+    }
+  ]
+}
