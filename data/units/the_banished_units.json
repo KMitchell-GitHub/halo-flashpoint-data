@@ -3,7 +3,7 @@
       {
         "name": "TEST BANISHED Spartan Brawler",
         "weapon": "CQS48 Bulldog",
-        "variant": null,
+        "variant":,
         "faction": "The Banished",
         "squadPoints": 39,
         "stats": {
@@ -73,7 +73,7 @@
       {
         "name": "Spartan Brawler",
         "weapon": "Needler",
-        "variant": null,
+        "variant":,
         "faction": "UNSC",
         "squadPoints": 39,
         "stats": {
@@ -106,7 +106,7 @@
         "upgradedCloseCombatWeapon": null
       },
       {
-        "name": "Spartan Brawler (M11 Combat Knife)",
+        "name": "Spartan Brawler",
         "weapon": "Needler",
         "variant": "M11 Combat Knife",
         "faction": "UNSC",
