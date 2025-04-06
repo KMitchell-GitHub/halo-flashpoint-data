@@ -2,7 +2,8 @@
   "units":[
     {
       "name": "Spartan Brawler",
-      "variant": "CQS48 Bulldog",
+      "weapon": "CQS48 Bulldog",
+      "variant": null,
       "faction": "UNSC",
       "squadPoints": 39,
       "stats": {
@@ -35,8 +36,9 @@
       "upgradedCloseCombatWeapon": null
     },
     {
-      "name": "Spartan Brawler (M11 Combat Knife)",
-      "variant": "CQS48 Bulldog",
+      "name": "Spartan Brawler",
+      "weapon": "CQS48 Bulldog",
+      "variant": "M11 Combat Knife",
       "faction": "UNSC",
       "squadPoints": 43,
       "stats": {
@@ -70,7 +72,8 @@
     },
     {
       "name": "Spartan Brawler",
-      "variant": "Needler",
+      "weapon": "Needler",
+      "variant": null,
       "faction": "UNSC",
       "squadPoints": 39,
       "stats": {
@@ -104,7 +107,8 @@
     },
     {
       "name": "Spartan Brawler (M11 Combat Knife)",
-      "variant": "Needler",
+      "weapon": "Needler",
+      "variant": "M11 Combat Knife",
       "faction": "UNSC",
       "squadPoints": 43,
       "stats": {
