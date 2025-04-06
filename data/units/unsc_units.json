@@ -3,7 +3,7 @@
     {
       "name": "Spartan Brawler",
       "weapon": "CQS48 Bulldog",
-      "variant":,
+      "variant": null,
       "faction": "UNSC",
       "squadPoints": 39,
       "stats": {
@@ -27,7 +27,7 @@
       "rangedWeapon": {
         "type": "Ranged",
         "name": "CQS48 Bulldog",
-        "range": "r2",
+        "range": "R2",
         "AP": 2,
         "keywords": ["Knockback", "Lethal (1)"]
       },
@@ -62,7 +62,7 @@
       "rangedWeapon": {
         "type": "Ranged",
         "name": "CQS48 Bulldog",
-        "range": "r2",
+        "range": "R2",
         "AP": 2,
         "keywords": ["Knockback", "Lethal (1)"]
       },
@@ -73,7 +73,7 @@
     {
       "name": "Spartan Brawler",
       "weapon": "Needler",
-      "variant":,
+      "variant": null,
       "faction": "UNSC",
       "squadPoints": 39,
       "stats": {
@@ -106,7 +106,7 @@
       "upgradedCloseCombatWeapon": null
     },
     {
-      "name": "Spartan Brawler (M11 Combat Knife)",
+      "name": "Spartan Brawler",
       "weapon": "Needler",
       "variant": "M11 Combat Knife",
       "faction": "UNSC",
@@ -132,7 +132,7 @@
       "rangedWeapon": {
         "type": "Ranged",
         "name": "Needler",
-        "range": 2,
+        "range": "R3",
         "AP": 0,
         "keywords": ["ranged", "needle"]
       },

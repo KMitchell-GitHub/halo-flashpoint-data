@@ -3,7 +3,7 @@
       {
         "name": "TEST BANISHED Spartan Brawler",
         "weapon": "CQS48 Bulldog",
-        "variant":,
+        "variant": null,
         "faction": "The Banished",
         "squadPoints": 39,
         "stats": {
@@ -73,7 +73,7 @@
       {
         "name": "Spartan Brawler",
         "weapon": "Needler",
-        "variant":,
+        "variant": null,
         "faction": "UNSC",
         "squadPoints": 39,
         "stats": {
