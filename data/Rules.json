@@ -1,0 +1,30 @@
+{
+    "unitSelection": {
+      "minUnits": 1,
+      "maxUnits": null,
+      "variantRestriction": {
+        "maxPerVariant": 2
+      }
+    },
+    "weaponUpgrades": {
+      "maxPerSquad": 1,
+      "excludedFromVariantRestriction": true
+    },
+    "grenadeUpgrades": {
+      "maxPerUnit": 2,
+      "excludedFromItemSlot": true
+    },
+    "itemUpgrades": {
+      "maxPerUnit": 2,
+      "maxPerFireteam": 2,
+      "noDuplicateItemPerUnit": true
+    },
+    "fireteamCommandUpgrades": {
+      "maxPerSquad": 1
+    },
+    "specialOrders": {
+      "minPerFireteam": 1,
+      "maxPerFireteam": 3
+    }
+}
+  
