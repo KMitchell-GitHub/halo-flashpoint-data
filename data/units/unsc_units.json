@@ -35,8 +35,8 @@
       "upgradedCloseCombatWeapon": null
     },
     {
-      "name": "Spartan Brawler",
-      "variant": "Prebuilt CQS48 Bulldog",
+      "name": "Spartan Brawler (M11 Combat Knife)",
+      "variant": "CQS48 Bulldog",
       "faction": "UNSC",
       "squadPoints": 43,
       "stats": {
@@ -103,8 +103,8 @@
       "upgradedCloseCombatWeapon": null
     },
     {
-      "name": "Spartan Brawler",
-      "variant": "Prebuilt Needler",
+      "name": "Spartan Brawler (M11 Combat Knife)",
+      "variant": "Needler",
       "faction": "UNSC",
       "squadPoints": 43,
       "stats": {
