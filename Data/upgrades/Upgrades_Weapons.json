@@ -2,7 +2,7 @@
   {
     "name": "M6 Spartan Laser",
     "hfp": "m6_spartan_laser",
-    "cost": 16,
+    "squadPoints": 16,
     "type": "weapon",
 	  "limited": 1,
 	  "range": "R7",
@@ -13,7 +13,7 @@
   {
     "name": "M392 DMR",
     "hfp": "m392_dmr",
-    "cost": 8,
+    "squadPoints": 8,
     "type": "weapon",
     "range": "R6",
     "armorPiercing": null,
@@ -23,7 +23,7 @@
   {
 	"name": "Plasma Repeater",
     "hfp": "plasma_repeater",
-    "cost": 7,
+    "squadPoints": 7,
     "type": "weapon",
     "range": "R5",
     "armorPiercing": 1,
