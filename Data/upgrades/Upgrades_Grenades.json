@@ -2,7 +2,7 @@
   {
     "name": "Fragmentation Grenade",
     "hfp": "fragmentation_grenade",
-    "cost": 3,
+    "squadPoints": 3,
     "type": "grenade",
     "limited": 2,
     "range": "R3",
@@ -13,7 +13,7 @@
   {
     "name": "Plasma Grenade",
     "hfp": "plasma_grenade",
-    "cost": 6,
+    "squadPoints": 6,
     "type": "grenade",
     "range": "R3",
     "armorPiercing": 2,
