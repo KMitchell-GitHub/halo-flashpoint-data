@@ -2,7 +2,7 @@
   {
     "name": "Drop Wall",
     "hfp": "drop_wall",
-    "cost": 5,
+    "squadPoints": 5,
     "type": "item",
     "limited": 1,
     "range": null,
@@ -13,7 +13,7 @@
   {
     "name": "Active Camouflage",
     "hfp": "active_camouflage",
-    "cost": 3,
+    "squadPoints": 3,
     "type": "item",
     "limited": 1,
     "range": null,
@@ -24,7 +24,7 @@
   {
     "name": "Explosive Ammo",
     "hfp": "explosive_ammo",
-    "cost": 4,
+    "squadPoints": 4,
     "type": "item",
     "limited": 1,
     "range": null,
