@@ -1,0 +1,33 @@
+[
+  {
+    "name": "M6 Spartan Laser",
+    "hfp": "m6_spartan_laser",
+    "cost": 16,
+    "type": "weapon",
+	  "limited": 1,
+	  "range": "R7",
+    "armourpiercing": 4,
+    "keywords": ["Lethal (2)", "Long", "Optics", "Weight of Fire (2)"],
+    "description":""
+  },
+  {
+    "name": "M392 DMR",
+    "hfp": "m392_dmr",
+    "cost": 8,
+    "type": "weapon",
+    "range": "R6",
+    "armorPiercing": null,
+    "keywords": ["Lethal (1)", "Optics"],
+	  "description": ""
+  },
+  {
+	"name": "Plasma Repeater",
+    "hfp": "plasma_repeater",
+    "cost": 7,
+    "type": "weapon",
+    "range": "R5",
+    "armorPiercing": 1,
+    "keywords": ["ESD (1)", "Weight of Fire (1)"], 
+	  "description": ""
+  }
+]

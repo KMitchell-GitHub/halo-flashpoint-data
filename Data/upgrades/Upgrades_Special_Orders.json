@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Snap Shot",
+    "hfp": "snap_shot",
+    "cost": 2,
+    "type": "special order",
+	  "limited": 1,
+	  "restriction": "Any Spartan"
+  },
+  {
+    "name": "Army of One",
+    "hfp": "army_of_one",
+    "cost": 6,
+    "type": "special order",
+	  "limited": 1,
+	  "restriction": "Master Chief Only"
+  },
+  {
+    "name": "Return to Sender",
+    "hfp": "retuen_to_sender",
+    "cost": 5,
+    "type": "special order",
+	  "limited": 1,
+	  "restriction": "Any Spartan"
+  },
+  {
+    "name": "Reinforcements Incoming",
+    "hfp": "reinforcements_incoming",
+    "cost": 5,
+    "type": "special order",
+	  "limited": 1,
+	  "restriction": "Sangheili Mercenaries Only"
+  },
+  {
+    "name": "Alliance",
+    "hfp": "alliance",
+    "cost": 3,
+    "type": "special order",
+	  "limited": 1,
+	  "restriction": "Any Banished"
+  }
+]
