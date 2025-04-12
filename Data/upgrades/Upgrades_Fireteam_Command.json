@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Extra Command Die - Every Round",
+    "hfp": "extra_command_die_all",
+    "squadPoints": 10,
+    "type": "fireteam command",
+	  "limited": 1
+  },
+  {
+    "name": "Extra Command Die - Single Round",
+    "hfp": "extra_command_die_single",
+    "squadPoints": 2,
+    "type": "fireteam command",
+	  "limited": 1
+  },
+  {
+    "name": "Extra d8 - Single Use",
+    "hfp": "extra_d8",
+    "squadPoints": 1,
+    "type": "fireteam command",
+	  "limited": 1
+  },
+  {
+    "name": "Extra roll on the Recon Table",
+    "hfp": "extra_roll",
+    "squadPoints": 3,
+    "type": "fireteam command",
+	  "limited": 1
+  }
+]
