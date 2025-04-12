@@ -29,5 +29,25 @@
     "armorPiercing": 1,
     "keywords": ["ESD (1)", "Weight of Fire (1)"], 
 	  "description": ""
+  },
+  {
+    "name": "M11 Combat Knife",
+    "hfp": "m11_combat_knife",
+    "squadPoints": 4,
+    "type": "weapon",
+    "range": "CC",
+    "armorPiercing": 2,
+    "keywords": ["ESD (1)"],
+	  "description": ""
+  },  
+  {
+    "name": "Energy Dagger",
+    "hfp": "energy_dagger",
+    "squadPoints": 2,
+    "type": "weapon",
+    "range": "CC",
+    "armorPiercing": 2,
+    "keywords": ["Lethal (1)"],
+	  "description": ""
   }
 ]
